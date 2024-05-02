@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Box</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Type something to get suggestions:</h1>
+    <div class="input-container">
+        <input type="text" id="inputField" oninput="showSuggestions()">
+        <button class="clear-input" onclick="clearInput()">Clear Input</button>
+    </div>
+    <button class="clear-suggestions" onclick="removeSuggestions()">Remove</button>
+
+    <div id="suggestions" class="suggestions-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
